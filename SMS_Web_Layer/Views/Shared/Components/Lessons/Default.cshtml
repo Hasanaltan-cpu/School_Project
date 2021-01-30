@@ -1,0 +1,16 @@
+﻿
+@model IEnumerable<SMS_Entity_Layer.Entities.Concrete.Lesson>
+
+
+<ul class="list-group">
+    <li class="list-group-item">
+        <a asp-controller="Students" asp-action="Index" class="nav-link text-dark">All Students</a>
+    </li>
+
+    @foreach (var item in Model)
+    {
+        <li class="list-group-item">
+            <a class="nav-link text-dark" asp-area="" asp-controller="Student" asp-action="StudentByLesson" asp-route-categorySlug="@item.Slug">@item.LessonName</a>
+        </li>
+    }
+</ul>
