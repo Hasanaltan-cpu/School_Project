@@ -32,31 +32,31 @@ namespace SMS_RestAPI
 
 
         
-            services.AddSwaggerGen(options =>
-            {
-                options.SwaggerDoc("CMS API", new OpenApiInfo()
-                {
-                    Title = "CMS API",
-                    Version = "V.1",
-                    Description = "CMS API",
-                    Contact = new OpenApiContact()
-                    {
-                        Email = "hsnaltan13@gmail.com",
-                        Name = "Hasan ALTAN",
-                        Url = new Uri("https://github.com/Hasanaltan-cpu")
-                    },
-                    License = new OpenApiLicense()
-                    {
-                        Name = "MIT Licance",
-                        Url = new Uri("https://github.com/Hasanaltan-cpu")
-                    }
-                });
+            //services.AddSwaggerGen(options =>
+            //{
+            //    options.SwaggerDoc("CMS API", new OpenApiInfo()
+            //    {
+            //        Title = "CMS API",
+            //        Version = "V.1",
+            //        Description = "CMS API",
+            //        Contact = new OpenApiContact()
+            //        {
+            //            Email = "hsnaltan13@gmail.com",
+            //            Name = "Hasan ALTAN",
+            //            Url = new Uri("https://github.com/Hasanaltan-cpu")
+            //        },
+            //        License = new OpenApiLicense()
+            //        {
+            //            Name = "MIT Licance",
+            //            Url = new Uri("https://github.com/Hasanaltan-cpu")
+            //        }
+            //    });
 
 
-                var xmlCommentFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
-                var xmlCommnetFullPath = Path.Combine(AppContext.BaseDirectory, xmlCommentFile);
-                options.IncludeXmlComments(xmlCommnetFullPath);
-            });
+            //    var xmlCommentFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
+            //    var xmlCommnetFullPath = Path.Combine(AppContext.BaseDirectory, xmlCommentFile);
+            //    options.IncludeXmlComments(xmlCommnetFullPath);
+            //});
             services.AddControllers();
         }
 

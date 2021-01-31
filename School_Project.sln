@@ -17,6 +17,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "StudentManagementSystem-Res
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SMS_RestAPI", "SMS_RestAPI\SMS_RestAPI.csproj", "{49164D75-1BC3-4212-814A-F77685F4CBDD}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "StudentPage(ExamResults)", "StudentPage(ExamResults)", "{43488D2D-0071-4C29-80FA-C57AFB50539A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StudentPage", "StudentPage\StudentPage.csproj", "{15E4E791-3D10-4578-B874-E2F6919A911F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -43,6 +47,10 @@ Global
 		{49164D75-1BC3-4212-814A-F77685F4CBDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{49164D75-1BC3-4212-814A-F77685F4CBDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{49164D75-1BC3-4212-814A-F77685F4CBDD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{15E4E791-3D10-4578-B874-E2F6919A911F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15E4E791-3D10-4578-B874-E2F6919A911F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15E4E791-3D10-4578-B874-E2F6919A911F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15E4E791-3D10-4578-B874-E2F6919A911F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -53,6 +61,7 @@ Global
 		{842FE99D-C815-4AD5-8B88-EA30AD310AB0} = {F78B0F0B-1BCB-46E4-865D-2CF76BD1F684}
 		{28E87895-7372-4BDC-A34B-F3A2E6FFED9D} = {F78B0F0B-1BCB-46E4-865D-2CF76BD1F684}
 		{49164D75-1BC3-4212-814A-F77685F4CBDD} = {35DD1886-D994-471B-99B8-1096A65ACA5E}
+		{15E4E791-3D10-4578-B874-E2F6919A911F} = {43488D2D-0071-4C29-80FA-C57AFB50539A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {88FF6D9A-3C8C-44FB-AC9A-5A8B4C608B71}
