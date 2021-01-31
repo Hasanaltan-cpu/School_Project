@@ -30,6 +30,8 @@ namespace SMS_RestAPI
             services.AddRouting(x => x.LowercaseUrls = true);
             services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
 
+
+        
             services.AddSwaggerGen(options =>
             {
                 options.SwaggerDoc("CMS API", new OpenApiInfo()
@@ -39,18 +41,18 @@ namespace SMS_RestAPI
                     Description = "CMS API",
                     Contact = new OpenApiContact()
                     {
-                        Email = "burak.yilmaz@bilgeadam.com",
-                        Name = "Burak Yýlmaz",
-                        Url = new Uri("https://github.com/Burakkylmz")
+                        Email = "hsnaltan13@gmail.com",
+                        Name = "Hasan ALTAN",
+                        Url = new Uri("https://github.com/Hasanaltan-cpu")
                     },
                     License = new OpenApiLicense()
                     {
                         Name = "MIT Licance",
-                        Url = new Uri("https://github.com/Burakkylmz")
+                        Url = new Uri("https://github.com/Hasanaltan-cpu")
                     }
                 });
 
-                // API'ýn sahib olduðu yetenekler yani Controller içerisindeki Action Metodlarýmýza yazdýðýmýz summary yani özet bilgilerin Swagger UI aracýnda gözükmesi için yapýlan bir konfigurasyon.
+
                 var xmlCommentFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
                 var xmlCommnetFullPath = Path.Combine(AppContext.BaseDirectory, xmlCommentFile);
                 options.IncludeXmlComments(xmlCommnetFullPath);
